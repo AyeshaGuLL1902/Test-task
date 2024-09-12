@@ -1,0 +1,24 @@
+
+
+<p-table [value]="daysOfWeek" [tableStyle]="{ 'min-width': '50rem' }">
+    <ng-template pTemplate="header">
+      <tr>
+        <th *ngFor="let day of daysOfWeek">{{ day.name }} ({{ day.date }})</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body">
+      <tr>
+        <td *ngFor="let day of daysOfWeek">
+          <p-card>
+            <ng-template pTemplate="title">
+              {{ day.name }}
+            </ng-template>
+            <ng-template pTemplate="content">
+              {{ day.content }}
+            </ng-template>
+          </p-card>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+  

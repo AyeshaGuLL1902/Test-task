@@ -1,0 +1,5 @@
+/* Example CSS to ensure proper column width */
+th, td {
+    width: 200px; /* Adjust as needed */
+  }
+  
